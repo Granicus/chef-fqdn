@@ -18,8 +18,9 @@
 # limitations under the License.
 #
 
+include_recipe "hosts_file"
+
 case node['platform_family']
-  
 when "rhel"
   include_recipe "fqdn::rhel"
 when "debian"

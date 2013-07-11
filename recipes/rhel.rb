@@ -36,7 +36,7 @@ end
 Chef::Log.info("hostname: #{hostname}")
 Chef::Log.info("fqdn: #{fqdn}")
 
-hostsfile_entry '127.0.0.1' do
+hosts_file_entry '127.0.0.1' do
   hostname  fqdn
   aliases [
     hostname,
@@ -47,7 +47,7 @@ hostsfile_entry '127.0.0.1' do
   ]
 end
 
-hostsfile_entry '::1' do
+hosts_file_entry '::1' do
   hostname  fqdn
   aliases [
     hostname,

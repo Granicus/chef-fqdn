@@ -33,7 +33,7 @@ if node.name.split('.').count <=2 then
   fqdn=hostname
 end
 
-hostsfile_entry '127.0.0.1' do
+hosts_file_entry '127.0.0.1' do
   hostname  fqdn
   aliases [
     hostname,
@@ -44,7 +44,7 @@ hostsfile_entry '127.0.0.1' do
   ]
 end
 
-hostsfile_entry '127.0.1.1' do
+hosts_file_entry '127.0.1.1' do
   hostname  fqdn
   aliases [
     hostname,
@@ -55,7 +55,7 @@ hostsfile_entry '127.0.1.1' do
   ]
 end
 
-hostsfile_entry '::1' do
+hosts_file_entry '::1' do
   hostname  fqdn
   aliases [
     hostname,
@@ -66,7 +66,7 @@ hostsfile_entry '::1' do
   ]
 end
 
-hostsfile_entry 'ff02::1' do
+hosts_file_entry 'ff02::1' do
   hostname  fqdn
   aliases [
     hostname,
