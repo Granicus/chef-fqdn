@@ -8,7 +8,7 @@ behavior by setting the attribute 'fqdn_as_hostname' to false.
 
 # Requirements
 line cookbook
-hostsfile cookbook
+hosts_file cookbook
 
 # Usage
 Include the default recipe in a base role or wrapper recipe, somewhere between selinux and ntp.
